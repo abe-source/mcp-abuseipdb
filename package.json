@@ -1,0 +1,49 @@
+{
+  "name": "mcp-abuseipdb",
+  "version": "1.0.0",
+  "description": "MCP server for AbuseIPDB — check IP reputation from any MCP client",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-abuseipdb": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "assets",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "start": "node dist/index.js",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "check": "biome check --write ."
+  },
+  "keywords": [
+    "mcp",
+    "abuseipdb",
+    "ip reputation",
+    "security",
+    "threat intelligence"
+  ],
+  "author": "Arminas B.",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.5.3",
+    "@types/node": "^22.0.0",
+    "tsc-alias": "^1.8.0",
+    "typescript": "^7.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abe-source/mcp-abuseipdb.git"
+  },
+  "homepage": "https://github.com/abe-source/mcp-abuseipdb#readme",
+  "bugs": {
+    "url": "https://github.com/abe-source/mcp-abuseipdb/issues"
+  }
+}

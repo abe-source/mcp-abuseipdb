@@ -1,0 +1,47 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="hero-title">
+  <title id="hero-title">mcp-abuseipdb — AbuseIPDB threat intelligence, exposed as MCP tools for any client</title>
+  <defs>
+    <radialGradient id="glow" cx="82%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#16a34a" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#16a34a" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#1f2937" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="300" fill="#0a0d0a"/>
+  <rect width="1200" height="300" fill="url(#grid)" opacity="0.5"/>
+  <rect width="1200" height="300" fill="url(#glow)"/>
+
+  <!-- Network / shield motif, right side -->
+  <g stroke="#22c55e" stroke-width="1.6" opacity="0.85" fill="none">
+    <circle cx="960" cy="150" r="3.5" fill="#22c55e" stroke="none"/>
+    <circle cx="1040" cy="95" r="3.5" fill="#22c55e" stroke="none"/>
+    <circle cx="1055" cy="185" r="3.5" fill="#22c55e" stroke="none"/>
+    <circle cx="990" cy="215" r="3.5" fill="#22c55e" stroke="none"/>
+    <circle cx="1000" cy="70" r="3.5" fill="#4ade80" stroke="none"/>
+    <line x1="960" y1="150" x2="1040" y2="95"/>
+    <line x1="960" y1="150" x2="1055" y2="185"/>
+    <line x1="960" y1="150" x2="990" y2="215"/>
+    <line x1="1040" y1="95" x2="1000" y2="70"/>
+    <line x1="1040" y1="95" x2="1055" y2="185"/>
+  </g>
+
+  <!-- Shield outline -->
+  <path d="M 1090 110 L 1090 155 C 1090 185 1105 205 1130 215 C 1155 205 1170 185 1170 155 L 1170 110 L 1130 95 Z"
+        fill="none" stroke="#166534" stroke-width="2" opacity="0.9"/>
+  <path d="M 1112 155 L 1124 168 L 1150 138" fill="none" stroke="#4ade80" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Text -->
+  <text x="80" y="140" font-family="'SF Mono', 'Fira Code', ui-monospace, Menlo, monospace" font-size="46" font-weight="700" fill="#f1f5f4">
+    mcp-<tspan fill="#4ade80">abuseipdb</tspan>
+  </text>
+  <text x="80" y="180" font-family="ui-sans-serif, -apple-system, Segoe UI, sans-serif" font-size="20" fill="#9ca3a3">
+    AbuseIPDB threat intelligence, exposed as MCP tools for any client
+  </text>
+
+  <text x="80" y="225" font-family="ui-monospace, Menlo, monospace" font-size="15" fill="#4b5563">
+    check_ip · get_blacklist · check_block · get_reports
+  </text>
+</svg>
