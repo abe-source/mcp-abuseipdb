@@ -13,7 +13,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsc && tsc-alias",
+    "build": "tsc && tsc-alias && chmod +x dist/index.js",
     "start": "node dist/index.js",
     "lint": "biome lint .",
     "format": "biome format --write .",
