@@ -34,7 +34,23 @@ npm install
 npm run build
 ```
 
-Add it to your MCP client config (e.g. Claude Desktop's `claude_desktop_config.json`):
+### Quick install
+
+The package is published on npm, so these register it in one step — no cloning or building required:
+
+**Claude Code:**
+```bash
+claude mcp add abuseipdb -e ABUSEIPDB_API_KEY=your-api-key-here -- npx -y mcp-abuseipdb
+```
+
+**Codex CLI:**
+```bash
+codex mcp add abuseipdb --env ABUSEIPDB_API_KEY=your-api-key-here -- npx -y mcp-abuseipdb
+```
+
+### Manual config (any stdio MCP client)
+
+Most clients that support stdio MCP servers (Claude Desktop, Cursor, Windsurf, etc.) use this same config shape — add it to whichever config file your client expects:
 
 ```json
 {
