@@ -25,14 +25,7 @@ An [MCP](https://modelcontextprotocol.io) server that exposes [AbuseIPDB](https:
 - Node.js 18+
 - A free [AbuseIPDB API key](https://www.abuseipdb.com/register) (free tier: 1,000 checks/day, 5 blacklist calls/day)
 
-## Setup
-
-```bash
-git clone https://github.com/abe-source/mcp-abuseipdb.git
-cd mcp-abuseipdb
-npm install
-npm run build
-```
+## Installation
 
 ### Quick install
 
@@ -105,6 +98,9 @@ Tool arguments are validated with [Zod](https://zod.dev) before any handler runs
 ## Development
 
 ```bash
+git clone https://github.com/abe-source/mcp-abuseipdb.git
+cd mcp-abuseipdb
+npm install
 npm run build   # compile TypeScript
 npm run lint     # check formatting + lint rules
 npm run check    # lint + format + fix, in place
